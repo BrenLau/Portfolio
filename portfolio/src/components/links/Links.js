@@ -1,13 +1,14 @@
+import "./links.css"
+
 const Links = () => {
     return (
-        <div>
+        <div className='linksdiv'>
             <a target="_blank" href='https://www.linkedin.com/in/brendan-l-b6952919a/'>LinkedIn</a>
-            <a>GitHub</a>
-            <a>Project 1</a>
-            <a>Project 2</a>
-            <a>Project 3</a>
-            <a>Project 4</a>
-            <a>Project 5</a>
+            <a target="_blank" href='https://github.com/BrenLau'>GitHub</a>
+            <a target="_blank" href='https://the-great-exchange.onrender.com/'>The Great Exchange</a>
+            <a target="_blank" href='https://hiremepls-rsb9.onrender.com/'>HireMePls</a>
+            <a target="_blank" href='https://ninemansocial.herokuapp.com/'>Nineman Social</a>
+            <a target="_blank" href='https://wecord-2.onrender.com/'>Wecord</a>
         </div>
     )
 }
