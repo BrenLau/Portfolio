@@ -1,10 +1,10 @@
 const Nav = () => {
     return (
         <nav>
-            <div>One</div>
-            <div>Two</div>
+            <div>Summary</div>
+            <div>Projects</div>
 
-            <div>Three</div>
+            <div>Skills</div>
 
         </nav>
     )
