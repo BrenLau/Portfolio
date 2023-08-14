@@ -1,0 +1,16 @@
+.linksdiv {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    /* background-color: blue; */
+    height: auto;
+}
+
+.link {
+    height: 50px;
+    background-color: red;
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+}
