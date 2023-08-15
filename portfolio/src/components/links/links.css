@@ -4,6 +4,9 @@
     width: 50px;
     /* background-color: blue; */
     height: auto;
+    position: absolute;
+    right: 5px;
+    /* background-color: blanchedalmond; */
 }
 
 .link {
