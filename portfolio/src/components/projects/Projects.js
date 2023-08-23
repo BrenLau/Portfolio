@@ -9,6 +9,13 @@ import gemarket from './projects/marketplace.png'
 import geseeking from './projects/seeking.png'
 import geprivatemessage from './projects/privatemessage.png'
 import geprofile from './projects/profile.png'
+import ninemanmain from './projects/ninemansocialmain.png'
+import ninemanlogin from './projects/ninemansociallogin.png'
+import ninemanchats from './projects/ninemansocialchats.png'
+import ninemanprofile from './projects/ninemansocialprofile.png'
+import ninemanteampage from './projects/ninemansocialteampage.png'
+
+
 
 const Projects = () => {
     return (
@@ -52,6 +59,31 @@ const Projects = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
+
+            <div className="sepprojects">
+                <a className="linktitle" target="_blank" href='https://the-great-exchange.onrender.com'>The Great Exchange</a>
+                <Carousel data-bs-theme="dark">
+                    <Carousel.Item>
+                        <img src={ninemanmain} className="d-block heightfix" alt='Front Page'></img>
+
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src={ninemanlogin} className="d-block heightfix" alt='Front Page'></img>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src={ninemanchats} className="d-block heightfix" alt='Front Page'></img>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src={ninemanprofile} className="d-block heightfix" alt='Front Page'></img>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src={ninemanteampage} className="d-block heightfix" alt='Front Page'></img>
+                    </Carousel.Item>
+
+                </Carousel>
+            </div>
+
+
             <div className='projectsdiv'>
                 <a target="_blank" href='https://the-great-exchange.onrender.com/'>The Great Exchange</a>
                 <a target="_blank" href='https://ninemansocial.herokuapp.com/'>Nineman Social</a>
