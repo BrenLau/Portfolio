@@ -7,13 +7,21 @@ import Info from './components/info/Info';
 
 function App() {
   return (
-    <div className="App">
-      <Nav></Nav>
-      <Links></Links>
-      <Projects />
-      <Skills />
-      <Info />
-    </div>
+    <>
+      <section>
+        <div class='air air1'></div>
+        <div class='air air2'></div>
+        <div class='air air3'></div>
+        <div class='air air4'></div>
+        <div className="App">
+          <Nav></Nav>
+          <Links></Links>
+          <Projects />
+          <Skills />
+          <Info />
+        </div>
+      </section >
+    </>
   );
 }
 
