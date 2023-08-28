@@ -1,4 +1,5 @@
 import "./projects.css"
+import { useState } from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import hiremeplsfrontpage from './projects/Hiremeplsfrontpage.png'
 import hiremeplsposts from './projects/hiremeplsposts.png'
@@ -18,70 +19,87 @@ import ninemanteampage from './projects/ninemansocialteampage.png'
 
 
 const Projects = () => {
+    const [project, setProject] = useState("hiremepls")
     return (
         <>
-            <div className="sepprojects">
-                <a className="linktitle" target="_blank" href='https://hiremepls-rsb9.onrender.com/'>HireMePls</a>
-                <Carousel data-bs-theme="dark">
-                    <Carousel.Item>
-                        <img src={hiremeplsfrontpage} className="d-block heightfix" alt='Front Page'></img>
 
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img src={hiremeplsposts} className="d-block heightfix" alt='Front Page'></img>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img src={hiremeplslogin} className="d-block heightfix" alt='Front Page'></img>
-                    </Carousel.Item>
-                </Carousel>
-            </div>
-            <div className="sepprojects">
-                <a className="linktitle" target="_blank" href='https://the-great-exchange.onrender.com'>The Great Exchange</a>
-                <Carousel data-bs-theme="dark">
-                    <Carousel.Item>
-                        <img src={gemain} className="d-block heightfix" alt='Front Page'></img>
-
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img src={gelivechat} className="d-block heightfix" alt='Front Page'></img>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img src={gemarket} className="d-block heightfix" alt='Front Page'></img>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img src={geseeking} className="d-block heightfix" alt='Front Page'></img>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img src={geprivatemessage} className="d-block heightfix" alt='Front Page'></img>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img src={geprofile} className="d-block heightfix" alt='Front Page'></img>
-                    </Carousel.Item>
-                </Carousel>
+            <div>
+                <button onClick={(e) => {
+                    setProject("hiremepls")
+                }}>hiremepls</button>
+                <button onClick={(e) => {
+                    setProject("greatexchange")
+                }}>The Great Exchange</button>
+                <button onClick={(e) => {
+                    setProject("nineman")
+                }}>Nineman Social</button>
             </div>
 
             <div className="sepprojects">
-                <a className="linktitle" target="_blank" href='https://the-great-exchange.onrender.com'>The Great Exchange</a>
-                <Carousel data-bs-theme="dark">
-                    <Carousel.Item>
-                        <img src={ninemanmain} className="d-block heightfix" alt='Front Page'></img>
+                {project === "hiremepls" ? <>
+                    <a className="linktitle" target="_blank" href='https://hiremepls-rsb9.onrender.com/'>HireMePls</a>
+                    <Carousel data-bs-theme="dark">
+                        <Carousel.Item>
+                            <img src={hiremeplsfrontpage} className="d-block heightfix" alt='Front Page'></img>
 
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img src={ninemanlogin} className="d-block heightfix" alt='Front Page'></img>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img src={ninemanchats} className="d-block heightfix" alt='Front Page'></img>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img src={ninemanprofile} className="d-block heightfix" alt='Front Page'></img>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img src={ninemanteampage} className="d-block heightfix" alt='Front Page'></img>
-                    </Carousel.Item>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img src={hiremeplsposts} className="d-block heightfix" alt='Front Page'></img>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img src={hiremeplslogin} className="d-block heightfix" alt='Front Page'></img>
+                        </Carousel.Item>
+                    </Carousel>
+                </> : project === "greatexchange" ?
 
-                </Carousel>
+
+                    <>
+                        <a className="linktitle" target="_blank" href='https://the-great-exchange.onrender.com'>The Great Exchange</a>
+                        <Carousel data-bs-theme="dark">
+                            <Carousel.Item>
+                                <img src={gemain} className="d-block heightfix" alt='Front Page'></img>
+
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={gelivechat} className="d-block heightfix" alt='Front Page'></img>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={gemarket} className="d-block heightfix" alt='Front Page'></img>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={geseeking} className="d-block heightfix" alt='Front Page'></img>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={geprivatemessage} className="d-block heightfix" alt='Front Page'></img>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={geprofile} className="d-block heightfix" alt='Front Page'></img>
+                            </Carousel.Item>
+                        </Carousel>
+                    </> : <>
+                        <a className="linktitle" target="_blank" href='https://ninemansocial.herokuapp.com/'>Nineman Social</a>
+                        <Carousel data-bs-theme="dark">
+                            <Carousel.Item>
+                                <img src={ninemanmain} className="d-block heightfix" alt='Front Page'></img>
+
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={ninemanlogin} className="d-block heightfix" alt='Front Page'></img>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={ninemanchats} className="d-block heightfix" alt='Front Page'></img>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={ninemanprofile} className="d-block heightfix" alt='Front Page'></img>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={ninemanteampage} className="d-block heightfix" alt='Front Page'></img>
+                            </Carousel.Item>
+                        </Carousel>
+                    </>
+                }
             </div>
+
 
 
             <div className='projectsdiv'>
