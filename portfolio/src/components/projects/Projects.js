@@ -15,6 +15,11 @@ import ninemanlogin from './projects/ninemansociallogin.png'
 import ninemanchats from './projects/ninemansocialchats.png'
 import ninemanprofile from './projects/ninemansocialprofile.png'
 import ninemanteampage from './projects/ninemansocialteampage.png'
+import wecordmain from './projects/wecordmain.png'
+import wecordsplash from './projects/wecordsplash.png'
+import wecordlogin from './projects/wecordlogin.png'
+import wecorddiscover from './projects/wecorddiscover.png'
+
 
 
 
@@ -33,6 +38,9 @@ const Projects = () => {
                 <button onClick={(e) => {
                     setProject("nineman")
                 }}>Nineman Social</button>
+                <button onClick={(e) => {
+                    setProject("wecord")
+                }}>Wecord</button>
             </div>
 
             <div className="sepprojects">
@@ -76,7 +84,7 @@ const Projects = () => {
                                 <img src={geprofile} className="d-block heightfix" alt='Front Page'></img>
                             </Carousel.Item>
                         </Carousel>
-                    </> : <>
+                    </> : project === "nineman" ? <>
                         <a className="linktitle" target="_blank" href='https://ninemansocial.herokuapp.com/'>Nineman Social</a>
                         <Carousel data-bs-theme="dark">
                             <Carousel.Item>
@@ -96,9 +104,26 @@ const Projects = () => {
                                 <img src={ninemanteampage} className="d-block heightfix" alt='Front Page'></img>
                             </Carousel.Item>
                         </Carousel>
+                    </> : <>
+                        <a className="linktitle" target="_blank" href='https://wecord-2.onrender.com/'>Wecord</a>
+                        <Carousel data-bs-theme="dark">
+                            <Carousel.Item>
+                                <img src={wecordsplash} className="d-block heightfix" alt='Front Page'></img>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={wecordlogin} className="d-block heightfix" alt='Front Page'></img>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={wecordmain} className="d-block heightfix" alt='Front Page'></img>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={wecorddiscover} className="d-block heightfix" alt='Front Page'></img>
+                            </Carousel.Item>
+                        </Carousel>
                     </>
                 }
-            </div>
+            </div >
+
 
         </>
     )
