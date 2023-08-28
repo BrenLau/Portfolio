@@ -4,7 +4,7 @@ const Skills = () => {
     return (
         <div>
             <div className='skillsection'>
-                <h2>Languages</h2>
+                <h2 className="skilltitle">Languages</h2>
                 <div className='skill'>JavaScript</div>
                 <div className='skill'>Python</div>
                 <div className='skill'>SQL</div>
@@ -13,7 +13,7 @@ const Skills = () => {
                 <div className='skill'>CSS</div>
             </div>
             <div className='skillsection'>
-                <h2>Frameworks</h2>
+                <h2 className="skilltitle">Frameworks</h2>
                 <div className='skill'>React</div>
                 <div className='skill'>Node.js</div>
                 <div className='skill'>Flask</div>
@@ -23,7 +23,7 @@ const Skills = () => {
                 <div className='skill'>PostgreSQL</div>
             </div>
             <div className='skillsection'>
-                <h2>Developer Tools</h2>
+                <h2 className="skilltitle">Developer Tools</h2>
                 <div className='skill'>Git</div>
                 <div className='skill'>GitHub</div>
                 <div className='skill'>Docker</div>
