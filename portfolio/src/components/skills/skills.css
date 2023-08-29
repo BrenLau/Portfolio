@@ -26,14 +26,12 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    box-shadow: -0 -0 5px rgba(254, 254, 254, .5);
+    box-shadow: -0 -0 5px rgba(254, 254, 254, .2);
     position: relative;
     margin-top: 50px;
-
-    /* background: #d0d5d8; */
     border-radius: 20px;
     padding: 5px;
-
+    background: radial-gradient(circle, rgba(249, 249, 249, 0.4906337535014006) 0%, rgba(172, 234, 255, 0.5354516806722689) 100%);
 }
 
 .skilltitle {
