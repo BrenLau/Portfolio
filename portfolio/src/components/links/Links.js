@@ -7,8 +7,8 @@ const Links = () => {
 
             <SocialIcon url="https://linkedin.com/in/brendan-l-b6952919a" />
             <SocialIcon url="https://github.com/BrenLau" />
+            {/* <SocialIcon network='email' url="blau4000@gmail.com" /> */}
 
-            {/* <a className='link' target="_blank" href='https://github.com/BrenLau'>GitHub</a> */}
         </div>
     )
 }
